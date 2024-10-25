@@ -45,7 +45,7 @@ describe('CoursesService', () => {
     const createCourseDto: CreateCourseDto = {
       title: 'denID',
       description: 'This is a new course',
-      level: 'Débutant', // Utilise un type valide
+      level: 'Débutant', 
     };
 
     mockRepository.findOne.mockResolvedValue(null);
@@ -125,7 +125,7 @@ describe('CoursesService', () => {
     const updateCourseDto: UpdateCourseDto = {
       title: 'La prehistoire',
       description: 'This is an updated course',
-      level: 'Intermédiaire', // Utilise un type valide
+      level: 'Intermédiaire', 
     };
     const updatedCourse = { id: 'denID', ...updateCourseDto };
 
